@@ -1,0 +1,569 @@
+/* Pearl White - Default brilliant white theme */
+:root,
+.pearl {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --card: #ffffff;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+/* Silver Mist - Elegant light silver */
+.silver {
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
+  --card: #fafafa;
+  --card-foreground: #1d1d1f;
+  --popover: #fafafa;
+  --popover-foreground: #1d1d1f;
+  --primary: #2c2c2e;
+  --primary-foreground: #f5f5f7;
+  --secondary: #e8e8ed;
+  --secondary-foreground: #1d1d1f;
+  --muted: #e8e8ed;
+  --muted-foreground: #86868b;
+  --accent: #d2d2d7;
+  --accent-foreground: #1d1d1f;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: transparent;
+  --input-background: #e8e8ed;
+  --switch-background: #c7c7cc;
+  --ring: #86868b;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #fafafa;
+  --sidebar-foreground: #1d1d1f;
+  --sidebar-primary: #2c2c2e;
+  --sidebar-primary-foreground: #f5f5f7;
+  --sidebar-accent: #e8e8ed;
+  --sidebar-accent-foreground: #1d1d1f;
+  --sidebar-border: #d2d2d7;
+  --sidebar-ring: #86868b;
+}
+
+/* Steel Gray - Sophisticated dark gray with modern edge */
+.chrome {
+  --background: #e8e9ea;
+  --foreground: #1a1b1e;
+  --card: #f0f1f2;
+  --card-foreground: #1a1b1e;
+  --popover: #ffffff;
+  --popover-foreground: #1a1b1e;
+  --primary: #43464B;
+  --primary-foreground: #ffffff;
+  --secondary: #d4d5d7;
+  --secondary-foreground: #1a1b1e;
+  --muted: #d4d5d7;
+  --muted-foreground: #5a5d62;
+  --accent: #c0c2c5;
+  --accent-foreground: #1a1b1e;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(67, 70, 75, 0.15);
+  --input: transparent;
+  --input-background: #d4d5d7;
+  --switch-background: #a8aaad;
+  --ring: #43464B;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #f0f1f2;
+  --sidebar-foreground: #1a1b1e;
+  --sidebar-primary: #43464B;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #d4d5d7;
+  --sidebar-accent-foreground: #1a1b1e;
+  --sidebar-border: #c0c2c5;
+  --sidebar-ring: #43464B;
+}
+
+/* Electric Blue - Vibrant blue with modern energy */
+.blue {
+  --background: #e6f0ff;
+  --foreground: #001a3d;
+  --card: #f0f7ff;
+  --card-foreground: #001a3d;
+  --popover: #ffffff;
+  --popover-foreground: #001a3d;
+  --primary: #0052FF;
+  --primary-foreground: #ffffff;
+  --secondary: #cce0ff;
+  --secondary-foreground: #001a3d;
+  --muted: #d9e8ff;
+  --muted-foreground: #003d99;
+  --accent: #b3d1ff;
+  --accent-foreground: #001a3d;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 82, 255, 0.15);
+  --input: transparent;
+  --input-background: #d9e8ff;
+  --switch-background: #99c2ff;
+  --ring: #0052FF;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: #f0f7ff;
+  --sidebar-foreground: #001a3d;
+  --sidebar-primary: #0052FF;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #d9e8ff;
+  --sidebar-accent-foreground: #001a3d;
+  --sidebar-border: #b3d1ff;
+  --sidebar-ring: #0052FF;
+}
+
+/* Brilliant Black - Deep elegant black with silver accents */
+.black,
+.dark {
+  --background: #0a0a0a;
+  --foreground: #e5e5e7;
+  --card: #151515;
+  --card-foreground: #e5e5e7;
+  --popover: #1a1a1a;
+  --popover-foreground: #e5e5e7;
+  --primary: #c7c7cc;
+  --primary-foreground: #0a0a0a;
+  --secondary: #1f1f1f;
+  --secondary-foreground: #e5e5e7;
+  --muted: #1f1f1f;
+  --muted-foreground: #98989d;
+  --accent: #2a2a2a;
+  --accent-foreground: #e5e5e7;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(199, 199, 204, 0.2);
+  --input: transparent;
+  --input-background: #1f1f1f;
+  --switch-background: #3a3a3c;
+  --ring: #c7c7cc;
+  --chart-1: oklch(0.746 0.222 41.116);
+  --chart-2: oklch(0.7 0.118 184.704);
+  --chart-3: oklch(0.598 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.869 0.188 70.08);
+  --sidebar: #0f0f0f;
+  --sidebar-foreground: #e5e5e7;
+  --sidebar-primary: #c7c7cc;
+  --sidebar-primary-foreground: #0a0a0a;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #e5e5e7;
+  --sidebar-border: #2a2a2a;
+  --sidebar-ring: #c7c7cc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Improve scrolling performance on all scrollable elements */
+  [class*="overflow-"], [class*="scroll-"], .scroll-area {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    /* Hardware acceleration for smooth scrolling */
+    transform: translateZ(0);
+    will-change: scroll-position;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  overflow: hidden;
+  /* Prevent iOS zoom on orientation change */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* Improve touch scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* Enable smooth touch interactions */
+  touch-action: pan-x pan-y;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  /* Enable pan gestures while preventing zoom */
+  touch-action: pan-x pan-y;
+  /* Prevent pull-to-refresh on mobile */
+  overscroll-behavior-y: contain;
+}
+
+/* Mobile-First Responsive Enhancements */
+@layer utilities {
+  /* Ensure touch targets are at least 44px (iOS HIG and Material Design standard) */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* Larger touch target for critical actions */
+  .touch-target-lg {
+    @apply min-h-[56px] min-w-[56px];
+  }
+
+  /* Better text wrapping on mobile */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Prevent layout shift from scrollbar */
+  .scrollable-content {
+    scrollbar-gutter: stable;
+  }
+
+  /* Better scrolling on mobile with momentum */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Improve tap highlight - transparent to avoid flash */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* Enable smooth touch panning */
+    touch-action: pan-x pan-y;
+  }
+  
+  /* Allow buttons and interactive elements to be tappable */
+  button, a, input, select, textarea, [role="button"], [tabindex] {
+    touch-action: manipulation;
+    /* Immediate response to touch */
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  /* Make text selectable in inputs */
+  input, textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  
+  /* Improve button tap responsiveness */
+  button {
+    cursor: pointer;
+    /* Prevent double-tap zoom on buttons */
+    touch-action: manipulation;
+  }
+
+  /* Smooth scroll behavior */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Snap scrolling for carousels */
+  .snap-x {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .snap-center {
+    scroll-snap-align: center;
+  }
+
+  /* Prevent overscroll bounce on mobile */
+  .no-overscroll {
+    overscroll-behavior: none;
+  }
+
+  /* Active press state for better feedback */
+  .press-scale {
+    @apply active:scale-[0.97] transition-transform;
+  }
+
+  /* Touch-friendly spacing */
+  .touch-spacing {
+    @apply gap-3 sm:gap-2;
+  }
+  
+  /* Safe area support for notched devices */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  /* Improve scrolling on touch devices */
+  .overscroll-behavior-y-contain {
+    overscroll-behavior-y: contain;
+  }
+  
+  /* Fix touch scrolling issues */
+  .touch-scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+  
+  /* Support for dynamic viewport height (mobile browsers with address bar) */
+  @supports (height: 100dvh) {
+    .h-screen-mobile {
+      height: 100dvh !important;
+    }
+  }
+  
+  /* Prevent layout shift when keyboard appears */
+  .fixed-viewport {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 640px) {
+  :root {
+    --font-size: 14px; /* Slightly smaller base font on mobile */
+  }
+
+  /* Prevent iOS auto-zoom on input focus by ensuring 16px minimum font size */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+  
+  /* Prevent page scroll when keyboard appears on mobile */
+  body.keyboard-open {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Reduce spacing on mobile */
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  /* Better card padding on mobile */
+  [class*="CardHeader"] {
+    @apply p-3;
+  }
+
+  [class*="CardContent"] {
+    @apply p-3;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    --font-size: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  :root {
+    --font-size: 16px;
+  }
+}
+
+/* Grid background pattern for hero sections */
+@layer utilities {
+  .bg-grid-white\/10 {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.1)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+  }
+
+  /* Custom Scrollbar Styles */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(203, 213, 225, 0.5) transparent;
+  }
+
+  .scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+    background-color: rgba(203, 213, 225, 0.5);
+    border-radius: 9999px;
+  }
+
+  .scrollbar-track-transparent::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .hover\:scrollbar-thumb-gray-400:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(148, 163, 184, 0.6);
+  }
+
+  /* Webkit scrollbar sizing */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(203, 213, 225, 0.5);
+    border-radius: 9999px;
+    border: 1px solid rgba(241, 245, 249, 0.8);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .scrollbar-thin:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(148, 163, 184, 0.6);
+  }
+
+  /* Shimmer animation for pulsing button */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+}
